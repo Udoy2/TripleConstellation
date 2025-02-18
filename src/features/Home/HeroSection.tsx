@@ -11,7 +11,7 @@ function HeroSection() {
             src="./src/assets/GameLogo.png"
           />
           <h1 className="markazi-text-600 relative text-4xl text-white md:text-5xl">
-            February 28, 2025
+            Coming Soon..
           </h1>
         </div>
 

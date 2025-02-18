@@ -1,7 +1,7 @@
 function StorySection() {
   return (
     <>
-      <div className="relative z-60 mt-40 flex flex-col-reverse items-center md:items-stretch md:flex-row gap-4">
+      <div className="relative z-60  flex flex-col-reverse items-center md:items-stretch md:flex-row gap-4">
         <div className=" md:w-1/2 bg-[url(./src/assets/gradient.png)] bg-cover bg-center">
           <p className="px-2 md:px-6 w-[90%] mx-auto md:text-start text-center">
             <br />
