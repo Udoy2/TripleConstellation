@@ -1,4 +1,3 @@
-
 # 🌌 TripleConstellation
 
 Welcome to **TripleConstellation**! This is a website for an exciting game that takes you on an interstellar adventure. 🚀
@@ -27,6 +26,13 @@ To run the project locally, use the following command:
 ```bash
 npm start
 ```
+
+## Project Structure
+
+- **src/components**: Reusable components like `Navbar`, `NavModal`, and `LinkButtons`.
+- **src/features/Home**: Home page sections including `BackgroundSection`, `HeroSection`, and `TrailerSection`.
+- **src/styles**: CSS files including `index.css` and `App.css`.
+- **public**: Static assets like images and videos.
 
 ## Contributing
 
