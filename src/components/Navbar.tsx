@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       {/* NavModal */}
-      <NavModal isopen={isOpen} setIsOpen={setIsOpen} />
+      <NavModal isopen={isOpen} />
       <nav className="absolute top-0 inset-x-0  flex flex-row justify-between p-4">
         <div className="h-16 w-32 z-50 object-contain pl-4">
            <a href="https://www.facebook.com/requiemforthedawn" target="_blank" className="cursor-pointer">
