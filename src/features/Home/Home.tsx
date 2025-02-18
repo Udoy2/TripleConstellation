@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar";
 import Title from "../../components/Title";
 import BackgroundSection from "./BackgroundSection";
 import GameplaySection from "./GameplaySection";
@@ -9,7 +8,7 @@ import TrailerSection from "./TrailerSection";
 function Home() {
   return (
     <>
-      <Navbar />
+      
       <main>
         {/* different sections */}
         <BackgroundSection />

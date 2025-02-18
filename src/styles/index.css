@@ -30,3 +30,31 @@
     overflow-x: hidden;
   }
   
+
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #654A17;
+  border-radius: 10px;
+  border: 2px solid #1e1e1e;       /* Creates a gap for a more rounded appearance */
+  background-clip: padding-box;    /* Ensures the border does not cover the thumb’s background */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #86652B;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #654A17 #1e1e1e;
+}
+
