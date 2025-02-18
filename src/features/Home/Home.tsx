@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar";
 import BackgroundSection from "./BackgroundSection";
 import HeroSection from "./HeroSection";
+import StorySection from "./StorySection";
 import TrailerSection from "./TrailerSection";
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
         <BackgroundSection />
         <HeroSection />
         <TrailerSection />
+        <StorySection />
       </main>
     </>
   );

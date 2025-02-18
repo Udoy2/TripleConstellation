@@ -3,7 +3,7 @@ import LinkButtons from "../../components/LinkButtons";
 function TrailerSection() {
   return (
     <>
-      <section className="relative z-10 min-h-screen w-screen text-center">
+      <section className="relative z-10  w-screen text-center">
         <div className="relative z-10 mx-auto aspect-video max-w-[90%] border-6 border-double border-orange-50 bg-[#565656] drop-shadow-[0_0_30px_rgba(255,237,212,0.8)] filter sm:max-w-[70%] md:max-w-[50%]">
           <video className="h-full w-full object-cover" autoPlay loop muted>
             <source src="./src/assets/background_video.mp4" type="video/mp4" />
