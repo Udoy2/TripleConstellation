@@ -14,7 +14,7 @@ Welcome to **TripleConstellation**! This is a website for an exciting game that 
 To get started with the project, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/yourusername/TripleConstellation.git
+git clone https://github.com/udoy2/TripleConstellation.git
 cd TripleConstellation
 npm install
 ```
