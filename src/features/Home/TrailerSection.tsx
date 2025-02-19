@@ -1,4 +1,4 @@
-import { backgroundVideo, SteamLogo } from "../../assets/Assets";
+import { backgroundVideo, SteamLogo, trailerBorder } from "../../assets/Assets";
 import LinkButtons from "../../components/LinkButtons";
 
 function TrailerSection() {
@@ -13,19 +13,19 @@ function TrailerSection() {
           <div className="lg:*:40 *:w-20 md:*:w-30">
             <img
               className="absolute -top-6 -left-6 md:-top-10 md:-left-10 lg:-top-15 lg:-left-15"
-              src="./src/assets/trailerBorder.png"
+              src={trailerBorder}
             />
             <img
               className="absolute -top-6 -right-6 scale-x-[-1] md:-top-10 md:-right-10 lg:-top-15 lg:-right-15"
-              src="./src/assets/trailerBorder.png"
+              src={trailerBorder}
             />
             <img
               className="absolute -bottom-6 -left-6 scale-y-[-1] md:-bottom-10 md:-left-10 lg:-bottom-15 lg:-left-15"
-              src="./src/assets/trailerBorder.png"
+              src={trailerBorder}
             />
             <img
               className="absolute -right-6 -bottom-6 scale-x-[-1] scale-y-[-1] md:-right-10 md:-bottom-10 lg:-right-15 lg:-bottom-15"
-              src="./src/assets/trailerBorder.png"
+              src={trailerBorder}
             />
           </div>
         </div>
