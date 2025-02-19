@@ -6,7 +6,7 @@ import gradient_mirror from "./gradient_mirror.png";
 import gradient from "./gradient.png";
 import storyEvent from "./story_event.gif";
 import gamePlay from "./game_play.gif";
-import trailerBorder from "./trailer_border.png";
+import trailerBorder from "./trailerBorder.png";
 
 export {
   loaderVideo,
