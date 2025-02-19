@@ -1,6 +1,7 @@
 import { FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { gameLogo } from "../../assets/Assets";
 function HeroSection() {
   return (
     <>
@@ -8,7 +9,7 @@ function HeroSection() {
         <div className="text-center">
           <img
             className="relative mb-4 h-100 object-contain"
-            src="./src/assets/GameLogo.png"
+            src={gameLogo}
           />
           <h1 className="markazi-text-600 relative text-4xl text-white md:text-5xl">
             Coming Soon..

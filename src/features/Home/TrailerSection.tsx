@@ -1,3 +1,4 @@
+import { backgroundVideo, SteamLogo } from "../../assets/Assets";
 import LinkButtons from "../../components/LinkButtons";
 
 function TrailerSection() {
@@ -6,7 +7,7 @@ function TrailerSection() {
       <section className="relative z-10  w-screen text-center">
         <div className="relative z-10 mx-auto aspect-video max-w-[90%] border-6 border-double border-orange-50 bg-[#565656] drop-shadow-[0_0_30px_rgba(255,237,212,0.8)] filter sm:max-w-[70%] md:max-w-[50%]">
           <video className="h-full w-full object-cover" autoPlay loop muted>
-            <source src="./src/assets/background_video.mp4" type="video/mp4" />
+            <source src={backgroundVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="lg:*:40 *:w-20 md:*:w-30">
@@ -32,7 +33,7 @@ function TrailerSection() {
           <LinkButtons
             text={"Available On"}
             link={"https://www.facebook.com/requiemforthedawn"}
-            iconLink={"./src/assets/SteamLogo.png"}
+            iconLink={SteamLogo}
           />
         </div>
       </section>

@@ -1,8 +1,10 @@
+import { gamePlay, gradient_mirror } from "../../assets/Assets";
+
 function GameplaySection() {
   return (
     <>
       <div className="relative z-60  flex flex-col-reverse items-center gap-4 md:flex-row-reverse md:items-stretch">
-        <div className="bg-[url(./src/assets/gradient_mirror.png)] bg-cover bg-center md:w-1/2">
+      <div className="md:w-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${gradient_mirror})` }}>
           <p className="mx-auto w-[90%] px-2 text-center md:px-6 md:text-start">
             <br />
             <br />
@@ -25,7 +27,7 @@ function GameplaySection() {
         <div className="px-3 md:w-1/2">
           <img
             className="w-full border-6 border-double border-orange-50 bg-[#565656] object-cover drop-shadow-[0_0_30px_rgba(255,237,212,0.8)] filter"
-            src="./src/assets/game_play.gif"
+            src={gamePlay}
           />
         </div>
       </div>

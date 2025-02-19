@@ -1,5 +1,6 @@
 import { useState } from "react";
 import NavModal from "./NavModal";
+import { SteamLogo } from "../assets/Assets";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,7 +11,7 @@ function Navbar() {
       <nav className="absolute top-0 inset-x-0  flex flex-row justify-between p-4">
         <div className="h-16 w-32 z-50 object-contain pl-4">
            <a href="https://www.facebook.com/requiemforthedawn" target="_blank" className="cursor-pointer">
-           <img src="./src/assets/SteamLogo.png"/>
+           <img src={SteamLogo}/>
            </a>
         </div>
 
