@@ -1,21 +1,23 @@
 import loaderVideo from "./loader.mp4";
-import backgroundVideo from "./background_video.mp4";
 import gameLogo from "./GameLogo.png";
 import SteamLogo from "./SteamLogo.png";
 import gradient_mirror from "./gradient_mirror.png";
 import gradient from "./gradient.png";
-import storyEvent from "./story_event.gif";
-import gamePlay from "./game_play.gif";
 import trailerBorder from "./trailerBorder.png";
+import Player1 from "./player1.png";
+import Player2 from "./player2.png"; 
+import Player3 from "./player3.png";
+import Player4 from "./player4.png";
 
 export {
   loaderVideo,
-  backgroundVideo,
   gameLogo,
   SteamLogo,
   gradient_mirror,
-  storyEvent,
-  gamePlay,
   gradient,
-  trailerBorder
+  trailerBorder,
+  Player1,
+  Player2,
+  Player3,
+  Player4
 };
