@@ -1,23 +1,35 @@
 import { useEffect, useRef } from "react";
 import { SteamLogo, trailerBorder } from "../../assets/Assets";
 import LinkButtons from "../../components/LinkButtons";
-import Beep from './beep.mp3';
+import Player from "@vimeo/player";
+
 function TrailerSection() {
   const sectionRef = useRef<HTMLElement>(null);
-  const audioRef = useRef<HTMLAudioElement>(null);
+  const videoRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (audioRef.current) {
+          if (videoRef.current) {
+            const player = new Player(videoRef.current);
+
             if (entry.isIntersecting) {
-              // Play the sound when the section is visible
-              audioRef.current.play();
+              // Reset video to start and set volume to 1
+              player.setCurrentTime(0).catch((error : any) => {
+                console.error("Error resetting video time:", error);
+              });
+              player.setVolume(1).catch((error : any) => {
+                console.error("Error setting video volume:", error);
+              });
+              player.play().catch((error : any) => {
+                console.error("Error playing video:", error);
+              });
             } else {
-              // Pause the sound when the section is not visible
-              audioRef.current.pause();
-              audioRef.current.currentTime = 0; // Reset the audio
+              // Pause video when section is not visible
+              player.pause().catch((error : any) => {
+                console.error("Error pausing video:", error);
+              });
             }
           }
         });
@@ -39,15 +51,15 @@ function TrailerSection() {
 
   return (
     <>
-      <audio ref={audioRef} src={Beep} preload="auto"></audio>
       <section
         ref={sectionRef}
         className="relative z-10 w-screen text-center"
       >
         <div className="relative z-10 mx-auto aspect-video max-w-[90%] border-6 border-double border-orange-50 bg-[#565656] drop-shadow-[0_0_30px_rgba(255,237,212,0.8)] filter sm:max-w-[70%] md:max-w-[50%]">
           <iframe
+            ref={videoRef}
             className="h-full w-full object-cover"
-            src="https://player.vimeo.com/video/1067647649?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;background=1&amp;loop=1"
+            src="https://player.vimeo.com/video/1067647649?badge=0&autopause=0&player_id=0&app_id=58479&background=1&loop=1&autoplay=0"
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen

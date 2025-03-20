@@ -12,7 +12,7 @@ function HeroSection() {
             src={gameLogo}
           />
           <h1 className="markazi-text-600 relative text-4xl text-white md:text-5xl">
-            Coming Soon..
+            {/* Coming Soon.. */}
           </h1>
         </div>
 
