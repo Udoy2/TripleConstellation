@@ -7,16 +7,24 @@ import Navbar from './components/Navbar';
 function App() {
   const [loading, setLoading] = useState(true);
 
+  // useEffect(() => {
+  //   const handleLoad = () => {
+  //     setLoading(false);
+  //   };
+
+  //   window.addEventListener('load', handleLoad);
+
+  //   return () => {
+  //     window.removeEventListener('load', handleLoad);
+  //   };
+  // }, []);
   useEffect(() => {
-    const handleLoad = () => {
+    setLoading(true);
+
+    setTimeout(() => {
       setLoading(false);
-    };
-
-    window.addEventListener('load', handleLoad);
-
-    return () => {
-      window.removeEventListener('load', handleLoad);
-    };
+    }
+    , 3000);
   }, []);
 
   return (
