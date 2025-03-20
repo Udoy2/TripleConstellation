@@ -1,65 +1,11 @@
-import { useEffect, useRef } from "react";
 import { gradient_mirror } from "../../assets/Assets";
-import Player from "@vimeo/player";
 
 function WorldSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const videoRef = useRef<HTMLIFrameElement>(null);
-
-  useEffect(() => {
-    let player: Player | null = null;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (videoRef.current) {
-            // Initialize the Vimeo Player instance if not already initialized
-            if (!player) {
-              player = new Player(videoRef.current);
-            }
-
-            if (entry.isIntersecting) {
-              // Reset video to start and set volume to 1
-              player.setCurrentTime(0).catch((error : any) => {
-                console.error("Error resetting video time:", error);
-              });
-              player.setVolume(1).catch((error : any) => {
-                console.error("Error setting video volume:", error);
-              });
-              player.play().catch((error : any) => {
-                console.error("Error playing video:", error);
-              });
-            } else {
-              // Pause video when section is not visible
-              player.pause().catch((error : any) => {
-                console.error("Error pausing video:", error);
-              });
-            }
-          }
-        });
-      },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
-    );
-
-    const section = sectionRef.current;
-    if (section) {
-      observer.observe(section);
-    }
-
-    return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
-      if (player) {
-        player.destroy(); // Clean up the Vimeo Player instance
-      }
-    };
-  }, []);
+  
 
   return (
     <>
       <div
-        ref={sectionRef}
         className="relative z-60 flex flex-col-reverse items-center gap-4 md:flex-row-reverse md:items-stretch"
       >
         <div
@@ -98,9 +44,8 @@ function WorldSection() {
         <div className="px-3 md:w-1/2">
           <div className="aspect-video">
             <iframe
-              ref={videoRef}
               className="h-full w-full object-cover border-6 border-double border-orange-50 bg-[#565656] object-cover drop-shadow-[0_0_30px_rgba(255,237,212,0.8)] filter"
-              src="https://player.vimeo.com/video/1067786589?badge=0&autopause=0&player_id=0&app_id=58479&background=1&loop=1&autoplay=0"
+              src="https://player.vimeo.com/video/1067786589?badge=0&autopause=0&player_id=0&app_id=58479&background=1&loop=1&autoplay=1"
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
