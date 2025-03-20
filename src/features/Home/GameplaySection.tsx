@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { gradient_mirror } from "../../assets/Assets";
 
 function GameplaySection() {

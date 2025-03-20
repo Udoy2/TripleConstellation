@@ -8,6 +8,8 @@ import Player1 from "./player1.png";
 import Player2 from "./player2.png"; 
 import Player3 from "./player3.png";
 import Player4 from "./player4.png";
+import titleBackground from "./title_background.png";
+
 
 export {
   loaderVideo,
@@ -19,5 +21,6 @@ export {
   Player1,
   Player2,
   Player3,
-  Player4
+  Player4,
+  titleBackground
 };

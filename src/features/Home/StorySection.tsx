@@ -1,4 +1,4 @@
-import { gradient, storyEvent } from "../../assets/Assets";
+import { gradient } from "../../assets/Assets";
 
 function StorySection() {
   return (

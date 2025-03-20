@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Player1, Player2, Player3, Player4 } from "../../assets/Assets";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
