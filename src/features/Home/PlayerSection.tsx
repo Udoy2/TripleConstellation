@@ -4,27 +4,27 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const players = [
   {
-    name: "Player 1",
+    name: "Aria the Brave",
     description:
-      "A skilled warrior with unmatched combat abilities. Explore the world of Luneria through their eyes.",
+      "A fearless warrior known for her strength and valor. Embark on an epic journey through the mystical lands of Luneria with her.",
     image: Player1,
   },
   {
-    name: "Player 2",
+    name: "Kael the Shadow",
     description:
-      "A stealthy rogue who uses cunning and agility to outsmart enemies. Discover their unique story.",
+      "A master of stealth and strategy, Kael uses his wit and agility to overcome any challenge. Unveil his mysterious past.",
     image: Player2,
   },
   {
-    name: "Player 3",
+    name: "Lyra the Enchanter",
     description:
-      "A stealthy rogue who uses cunning and agility to outsmart enemies. Discover their unique story.",
+      "A gifted mage with unparalleled control over the elements. Witness her magical prowess as she shapes the fate of Luneria.",
     image: Player3,
   },
   {
-    name: "Player 4",
+    name: "Darius the Protector",
     description:
-      "A stealthy rogue who uses cunning and agility to outsmart enemies. Discover their unique story.",
+      "A steadfast guardian who stands as a shield for his allies. Discover his unwavering dedication to justice and honor.",
     image: Player4,
   },
 ];
@@ -49,7 +49,7 @@ function PlayerSection() {
   }, []);
 
   return (
-    <div className="relative z-60 container mx-auto px-4 py-8">
+    <div className="relative z-60 container mx-auto px-4 py-2">
       <div className="max-w-4xl mx-auto">
         {/* Carousel Container */}
         <div className="relative group">
