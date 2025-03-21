@@ -6,6 +6,7 @@ import StorySection from "./StorySection";
 import TrailerSection from "./TrailerSection";
 import GameplaySection from "./GameplaySection";
 import PlayerSection from "./PlayerSection";
+import FeaturesSection from "./FeaturesSection";
 
 function Home() {
   return (
@@ -22,8 +23,10 @@ function Home() {
         <WorldSection />
         <Title title="Gameplay" />
         <GameplaySection />
-        <Title title="Player" />
+        <Title title="Characters" />
         <PlayerSection />
+        <Title title="Features" />
+        <FeaturesSection />
       </main>
     </>
   );
