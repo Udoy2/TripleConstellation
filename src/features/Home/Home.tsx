@@ -7,6 +7,7 @@ import TrailerSection from "./TrailerSection";
 import GameplaySection from "./GameplaySection";
 import PlayerSection from "./PlayerSection";
 import FeaturesSection from "./FeaturesSection";
+import Footer from "../../components/Footer";
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
         <PlayerSection />
         <Title title="Features" />
         <FeaturesSection />
+        <Footer />
       </main>
     </>
   );
