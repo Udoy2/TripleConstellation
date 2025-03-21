@@ -9,6 +9,7 @@ import Player2 from "./player2.png";
 import Player3 from "./player3.png";
 import Player4 from "./player4.png";
 import titleBackground from "./title_background.png";
+import Information from './information.jpg'
 
 
 export {
@@ -22,5 +23,6 @@ export {
   Player2,
   Player3,
   Player4,
-  titleBackground
+  titleBackground,
+  Information
 };

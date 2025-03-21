@@ -1,5 +1,5 @@
 import { useState} from "react";
-import { Player1, Player2, Player3, Player4 } from "../../assets/Assets";
+import { Information, Player1, Player2, Player3, Player4 } from "../../assets/Assets";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const players = [
@@ -26,6 +26,12 @@ const players = [
     description:
       "Empress to the Elfanian Flag, a woman of few words. Adorned in Velvety Silver, she acts like a Thorn protecting the Rose that are her people. Though taking the seat of the Empire was never her doing. As she is tied to the seat by the Great Grandmaster that she honored quite a bit. Much of Elfanian's action are directed by Great Grandmaster, making her almost like a Puppet on strings to honor wishes of Great Grandmaster.",
     image: Player3,
+  },
+  {
+    name: "",
+    description:
+      "",
+    image: Information,
   },
 ];
 
@@ -82,11 +88,13 @@ function PlayerSection() {
           <h2 className="text-4xl font-bold text-white mb-4 markazi-text-600">
             {players[currentSlide].name}
           </h2>
-          <div className="bg-black/30 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto mb-8">
-            <p className="text-2xl text-slate-300 markazi-text-500 leading-relaxed">
+            {players[currentSlide].description && (
+            <div className="bg-black/30 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto mb-8">
+              <p className="text-2xl text-slate-300 markazi-text-500 leading-relaxed">
               {players[currentSlide].description}
-            </p>
-          </div>
+              </p>
+            </div>
+            )}
         </div>
       </div>
     </div>
